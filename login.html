@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bank Application</title>
+</head>
+<body>
+    <div class="header">
+        <div  class="header_left">
+        <h1 >The Bank</h1>
+        </div>
+        <div class="header_right">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            
+        </ul>
+    </div>
+    </div>
+
+
+    <section id="home">
+
+    <div class="content">
+    <div class="content_img">
+        <img src="images/image.jpg">
+    </div>
+    <div class="content_msg">
+        <p>All Your<br>
+        <span>Banking</span><br>
+    needs in one place</p>
+    </div>
+</div>
+</section>
+
+    <section id="contact">
+    <div class="forms">
+        <p>Please Enter Details to Starting Banking With Us</p>
+    <div  class="login_form">
+    <form action="login.pl" method="post"  id="myform">
+        <label>Email_ID:</label><br>
+        <input type="email" name="emailid"/><br>
+        <p class="alert" id="alert_email"></p>
+
+        <label>Password:</label><br>
+        <input type="text" name="password"/><br><br>
+        <p id="alert_password"></p>
+        
+        <input type="submit" value="submit" id="submit"/>
+    </form>
+</div >
+    <div class="signup_form">
+    <form action="signup.html" method="post">
+        <p>If U dont have an account in our bank please <a href="signup.html">Click Here</a></p>
+    </form>
+
+</div>
+</div>
+</section>
+<section id="about">
+    <h1 class="h1">Our Services</h1>
+<div class="section_2">
+    <div class="card">
+        <figure >
+            <img src="images/Digital-Banking-PNG-HD.png" class="images" alt="">
+        </figure>
+        <figcaption>100% Safe Banking </figcaption>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="images/mobile.png" class="images" alt="">
+        </figure>
+        <figcaption>Easy To Navigate Mobile Application</figcaption>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="images/dollar.png" class="images" alt="">
+        </figure>
+        <figcaption>Safe And Secure Locking System</figcaption>
+    </div>
+</div>
+</section>
+
+
+<section id="section_3">
+    <h1 class="h1">Get in touch with us</h1>
+    <div class="section_3">
+    <div class="menu-link">
+        
+        <ul class="menu-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            
+        </ul>
+    </div>
+    <div class="news_letter">
+        <p>Subscribe to news letter:</p>
+        <input type="email"  placeholder="Enter Your Email Here"/>
+    </div>
+</div>
+
+</section>
+<section>
+    <footer>
+        <p>2023 @The Bank All right reserved</p>
+    </footer>
+</section>
+
+
+
+    <script src="js/login.js">
+    </script>
+</body>
+</html>

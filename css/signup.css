@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap');
+
+
+:root{
+    --clr-accent:#330C2F;
+    --clr-secondary:#ffffff;
+    --clr-primary: #CBF3D2;
+    --clr-third:#79003a;
+
+    --text-primary:400;
+    --text-secondary:500;
+    --text-title:700;
+}
+
+
+*,
+*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    border:0;
+    background-color: var(--clr-secondary);
+}
+
+.header{
+    display: flex;
+    background-color: var(--clr-primary);
+    color:var(--clr-accent);
+    justify-content: space-evenly;
+    
+}
+
+.header_left{
+    font-size: 22px;
+    font-family: 'Tektur';
+    font-weight: var(--text-title);
+    transition: text-decoration 5s ease-in 3s;
+    
+
+}
+
+.header_left:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header_right ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap:30px;
+    padding-top:26px;
+    font-size: 20px;
+    font-family: 'Tektur';
+    font-weight: var(--text-secondary);
+    
+}
+
+.header_right ul li:hover{
+    cursor: pointer;
+}
+
+
+
+.forms{
+    text-align: center;
+    font-size: 20px;
+    border:5px solid var(--clr-accent);
+    padding: 25px;
+    color: var(--clr-primary);
+    background-color: var(--clr-accent);
+    font-family: 'Tektur';
+    font-weight: var(--text-primary);
+}
+.login_form,.signup_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    
+}
+.login_form input{
+    border-left:0px;
+    border-right: 0px;
+    border-top:0px ;
+    border-radius: 40px;
+    font-family: Tektur;
+    
+}
+#submit{
+    border-left:0px;
+    border-right: 0px;
+    border-top:0px ;
+    border-radius: 0px;
+    padding: 10px;
+    font-family: Tektur;
+    font-weight: var(--text-secondary);
+    color:var(--clr-third);
+    background-color: var(--clr-primary);
+    transition: transform 0.3s ease-in 0s;
+
+}
+#submit:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: var(--clr-primary);
+    background-color: var(--clr-third);
+}
+
+
+
+#fname1,#lname1,#city1,#phonenumber1,#email1,#pass1{
+    color:red;
+}

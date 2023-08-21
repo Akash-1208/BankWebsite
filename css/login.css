@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap');
+
+
+:root{
+    --clr-accent:#330C2F;
+    --clr-secondary:#ffffff;
+    --clr-primary: #CBF3D2;
+    --clr-third:#79003a;
+
+    --text-primary:400;
+    --text-secondary:500;
+    --text-title:700;
+}
+
+
+*,
+*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    border:0;
+    background-color: var(--clr-secondary);
+}
+
+.header{
+    display: flex;
+    background-color: var(--clr-primary);
+    color:var(--clr-accent);
+    justify-content: space-evenly;
+    
+    
+}
+
+.header_left{
+    font-size: 22px;
+    font-family: 'Tektur';
+    font-weight: var(--text-title);
+    transition: text-decoration 5s ease-in 3s;
+    
+
+}
+
+.header_left:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 1rem;
+}
+
+.header_right ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap:30px;
+    padding-top:26px;
+    font-size: 20px;
+    font-family: 'Tektur';
+    
+    font-weight: var(--text-secondary);
+    
+}
+.header_right ul li a{
+    color:var(--clr-accent);
+}
+
+.header_right ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.forms{
+    text-align: center;
+    font-size: 20px;
+    border:5px solid var(--clr-accent);
+    padding: 25px;
+    color: var(--clr-primary);
+    background-color: var(--clr-accent);
+    font-family: 'Tektur';
+    font-weight: var(--text-primary);
+}
+.login_form,.signup_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    
+}
+.login_form input{
+    border-left:0px;
+    border-right: 0px;
+    border-top:0px ;
+    border-radius: 40px;
+    
+}
+#submit{
+    border-left:0px;
+    border-right: 0px;
+    border-top:0px ;
+    border-radius: 0px;
+    padding: 10px;
+    font-family: Tektur;
+    font-weight: var(--text-secondary);
+    color:var(--clr-third);
+    background-color: var(--clr-primary);
+    transition: transform 0.3s ease-in 0s;
+
+}
+#submit:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: var(--clr-primary);
+    background-color: var(--clr-third);
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--clr-third);
+    
+}
+
+.content img{
+    width:400px;
+    padding:10px;
+    display: grid;
+    margin:auto;
+    /* border: 5px solid blue; */
+}
+
+
+.content_msg{
+    padding-top: 40px;
+    font-size: 35px;
+    font-family: 'Tektur';
+    font-weight: var(--text-primary);
+    /* border: 5px solid blue; */
+}
+
+span{
+    font-size: 60px;
+    color:var(--clr-accent)
+}
+
+#alert_email,#alert_password,#fname1,#lname1,#city1,#phonenumber1,#email1,#pass1{
+    color:red;
+}
+
+
+
+
+.section_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.images{
+    width:250px;
+    height: 250px;
+    /* border: 5px solid var(--clr-accent); */
+    border-radius: 2rem;
+    padding: 2rem;
+    offset: 2rem;
+    background-color: white;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 2rem;
+    margin-top: 15px;
+    min-height: 60vh;
+    min-width: 15vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* font-size: 2rem; */
+    font-family: Tektur;
+    font-weight: var(--text-secondary);
+    border: 2px solid var(--clr-third);
+    /* color: var(--clr-secondary); */
+}
+
+figcaption{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding:15px;
+    font-size: 1rem;
+    
+}
+figure img{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: var(--clr-accent);
+    color: var(--clr-secondary);
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+#section_3{
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    font-family: Tektur;
+    
+}
+.section_3{
+    display: flex;
+    justify-content: space-around;
+    margin-top:5px;
+    align-items: center;
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    min-height: 30vh;
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+}
+.menu-links{
+    display: grid;
+    gap:1rem;
+    list-style: none;
+    font-family: Tektur;
+}
+.h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Tektur;
+    padding-top:2rem ;
+    margin-bottom: 0px;
+}
+
+input{
+    border-radius: 2rem;
+    border: 2px solid var(--clr-primary);
+    text-align: center;
+    min-height: 5vh;
+}
+footer{
+    font-family: Tektur;
+    text-align: center;
+    font-weight: var(--text-secondary);
+   
+}
+.menu-links a{
+    color:var(--clr-secondary);
+}

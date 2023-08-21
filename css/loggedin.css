@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap');
+
+
+:root{
+    --clr-accent:#330C2F;
+    --clr-secondary:#ffffff;
+    --clr-primary: #CBF3D2;
+    --clr-third:#79003a;
+
+    --text-primary:400;
+    --text-secondary:500;
+    --text-title:700;
+}
+
+
+*,
+*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    border:0;
+    background-color: var(--clr-secondary);
+}
+
+.header{
+    display: flex;
+    background-color: var(--clr-primary);
+    color:var(--clr-accent);
+    justify-content: space-evenly;
+    
+    
+}
+
+.header_left{
+    font-size: 22px;
+    font-family: 'Tektur';
+    font-weight: var(--text-title);
+    transition: text-decoration 5s ease-in 3s;
+    
+
+}
+
+.header_left:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header_right p{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap:30px;
+    padding-top:26px;
+    font-size: 20px;
+    font-family: 'Tektur';
+    font-weight: var(--text-secondary);
+    
+}
+
+.header_right p:hover{
+    cursor: pointer;
+}
+
+
+.balance{
+    /* border:5px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.checkbalance{
+    border:5px solid red;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 5px solid var(--clr-third);
+    background-color: var(--clr-secondary);
+    color:var(--clr-accent);
+    transition:transform 0.3s ease-in 0s;
+
+}
+.checkbalance:hover{
+    transform:translateY(-10px);
+    cursor: pointer;
+}
+figcaption{
+    font-family: Tektur;
+    font-weight: var(--text-primary);
+    font-size: 16px;
+    text-align: center;
+    border-top: 2px solid var(--clr-primary);
+    padding-top: 5px;
+}
+
+button{
+    border-left:0px;
+    border-right: 0px;
+    border-top:0px ;
+    border-radius: 0px;
+    font-family: Tektur;
+    font-weight: var(--text-secondary);
+    color:var(--clr-third);
+    background-color: var(--clr-primary);
+    transition: transform 0.3s ease-in 0s;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: var(--clr-primary);
+    background-color: var(--clr-third);
+}
+
+img{
+    width: 276px;
+    height: 253px;
+}
